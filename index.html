@@ -152,17 +152,25 @@
             </div>
 
             <div class="apply-discount">
-              <div class="apply-discount-header">
+              <div class="apply-discount-header" onclick="toggleDiscount()">
                 <span>Aplicar cupom de desconto</span
-                ><i id="toogle-icon" class="bxr bx-chevron-down"></i>
+                ><i id="toggle-icon" class="bxr bx-chevron-down"></i>
               </div>
 
               <div class="apply-discount-body" id="aply-discount-body">
                 <input type="text" id="discount-code" placeholder="desconto" />
-                <button id="discount_btn" type="button">Aplicar</button>
-                <span style="display: block; margin-top: 10px; color: green"
-                  >Desconto de DESCONTO10 aplicado</span
+                <button
+                  id="discount_btn"
+                  type="button"
+                  onclick="applyDiscount()"
                 >
+                  Aplicar
+                </button>
+                <span
+                  id="discount-message"
+                  style="display: block; margin-top: 10px; color: green"
+                ></span>
+                <p id="total-price">Preço Total: R$ 1200.00</p>
               </div>
               <div class="icons">
                 <i class="bxl bx-mastercard"></i>
@@ -200,5 +208,6 @@
       </footer>
     </main>
     <script src="script1.js"></script>
+    <script src="desconto.js"></script>
   </body>
 </html>
