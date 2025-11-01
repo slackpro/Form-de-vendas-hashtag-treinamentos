@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../../Atividade-CalculadoraIMC/IMC-Atividade"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "JAVASCRIPT"
+  }
+}
